@@ -1,7 +1,7 @@
 name: shorebird_code_push
 description: Check for and download Shorebird code push updates from your app.
 version: 2.0.7
-homepage: https://shorebird.dev
+homepage: https://www.patchwing.net
 repository: https://github.com/shorebirdtech/updater/tree/main/shorebird_code_push
 
 environment:

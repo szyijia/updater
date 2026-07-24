@@ -18,7 +18,7 @@ const DEFAULT_BASE_URL: &str = "DEFAULT_BASE_URL should be mocked using mockito:
 
 /// cbindgen:ignore
 #[cfg(not(test))]
-const DEFAULT_BASE_URL: &str = "https://api.shorebird.dev";
+const DEFAULT_BASE_URL: &str = "https://api.patchwing.net";
 
 /// cbindgen:ignore
 const DEFAULT_CHANNEL: &str = "stable";
