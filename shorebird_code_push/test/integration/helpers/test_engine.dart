@@ -39,7 +39,7 @@ class TestEngine {
 
   /// Initializes the updater for a single test. Acts as the engine
   /// would on app startup: configures storage paths, the release
-  /// version, and the `shorebird.yaml` (synthesized here from
+  /// version, and the `patchwing.yaml` (synthesized here from
   /// `app_id` + the test's [server] base URL).
   ///
   /// [libappBase] is written to `libapp_path` before init. On

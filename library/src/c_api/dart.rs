@@ -89,7 +89,7 @@ pub extern "C" fn shorebird_next_boot_patch_number() -> usize {
 
 /// Check for an update on the first non-null channel of:
 ///   1. `c_channel`
-///   2. The channel specified in shorebird.yaml
+///   2. The channel specified in patchwing.yaml
 ///   3. The default "stable" channel
 ///
 /// Returns true if an update exists that has not yet been downloaded.
@@ -107,7 +107,7 @@ pub extern "C" fn shorebird_check_for_downloadable_update(c_channel: *const c_ch
 
 /// Synchronously download an update on the first non-null channel of:
 ///   1. `c_channel`
-///   2. The channel specified in shorebird.yaml
+///   2. The channel specified in patchwing.yaml
 ///   3. The default "stable" channel
 ///
 /// Returns an [UpdateResult] indicating whether the update was successful.

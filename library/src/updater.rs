@@ -186,7 +186,7 @@ where
 
 /// Initialize the updater library.
 /// Takes a `AppConfig` struct and a yaml string.
-/// The yaml string is the contents of the `shorebird.yaml` file.
+/// The yaml string is the contents of the `patchwing.yaml` file.
 /// The `AppConfig` struct is information about the running app and where
 /// the updater should keep its cache.
 pub fn init(
@@ -273,7 +273,7 @@ pub fn should_auto_update() -> anyhow::Result<bool> {
 
 /// Synchronously checks for an update on the first non-null channel of:
 ///   1. `c_channel`
-///   2. The channel specified in shorebird.yaml
+///   2. The channel specified in patchwing.yaml
 ///   3. The default "stable" channel
 ///
 /// Returns true if an update is available for download. Will return false if the update is already

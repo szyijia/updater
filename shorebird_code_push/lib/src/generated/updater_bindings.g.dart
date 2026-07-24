@@ -2379,7 +2379,7 @@ class UpdaterBindings {
 
   /// Check for an update on the first non-null channel of:
   /// 1. `c_channel`
-  /// 2. The channel specified in shorebird.yaml
+  /// 2. The channel specified in patchwing.yaml
   /// 3. The default "stable" channel
   ///
   /// Returns true if an update exists that has not yet been downloaded.
@@ -2400,7 +2400,7 @@ class UpdaterBindings {
 
   /// Synchronously download an update on the first non-null channel of:
   /// 1. `c_channel`
-  /// 2. The channel specified in shorebird.yaml
+  /// 2. The channel specified in patchwing.yaml
   /// 3. The default "stable" channel
   ///
   /// Returns an [UpdateResult] indicating whether the update was successful.

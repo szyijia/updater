@@ -219,7 +219,7 @@ Changes in this state can be triggered by:
 ### Patch Verification Modes
 
 The updater supports two patch verification modes, configured via
-`patch_verification` in `shorebird.yaml`. Both modes require a
+`patch_verification` in `patchwing.yaml`. Both modes require a
 `patch_public_key` to be configured for signature verification to occur.
 
 #### Strict Mode (default)

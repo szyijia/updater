@@ -52,7 +52,7 @@ impl<'de> Deserialize<'de> for EventType {
 /// An event that is sent to the server when a patch is successfully installed.
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct PatchEvent {
-    /// The Shorebird app_id built into the shorebird.yaml in the app.
+    /// The Shorebird app_id built into the patchwing.yaml in the app.
     pub app_id: String,
 
     /// The architecture we're running (e.g. "aarch64", "x86", "x86_64").

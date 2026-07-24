@@ -190,7 +190,7 @@ Endpoints we need (today):
   resume tests are real (`network.rs` already sends `Range: bytes=N-`).
 - `POST /api/v1/patches/events` — accepts and records events for assertion.
 
-`base_url` is read from `shorebird.yaml`, so each test writes a yaml
+`base_url` is read from `patchwing.yaml`, so each test writes a yaml
 pointing at the test server's `127.0.0.1:<ephemeral-port>`.
 
 ### 5. Patch fixtures

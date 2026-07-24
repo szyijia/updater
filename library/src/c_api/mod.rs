@@ -417,7 +417,7 @@ mod test {
         testing_set_network_hooks(
             |_url, request| {
                 // We didn't specify a channel in either the shorebird_check_for_downloadable_update
-                // call or the shorebird.yaml, so we should default to "stable".
+                // call or the patchwing.yaml, so we should default to "stable".
                 assert_eq!(request.channel, "stable");
                 Ok(PatchCheckResponse {
                     patch_available: true,

@@ -75,7 +75,7 @@ SHOREBIRD_EXPORT uintptr_t shorebird_next_boot_patch_number(void);
 /**
  * Check for an update on the first non-null channel of:
  *   1. `c_channel`
- *   2. The channel specified in shorebird.yaml
+ *   2. The channel specified in patchwing.yaml
  *   3. The default "stable" channel
  *
  * Returns true if an update exists that has not yet been downloaded.
@@ -86,7 +86,7 @@ bool shorebird_check_for_downloadable_update(const char *c_channel);
 /**
  * Synchronously download an update on the first non-null channel of:
  *   1. `c_channel`
- *   2. The channel specified in shorebird.yaml
+ *   2. The channel specified in patchwing.yaml
  *   3. The default "stable" channel
  *
  * Returns an [UpdateResult] indicating whether the update was successful.

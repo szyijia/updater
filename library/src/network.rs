@@ -225,13 +225,13 @@ pub struct Patch {
 /// The request body for the patch check endpoint.
 #[derive(Debug, Serialize)]
 pub struct PatchCheckRequest {
-    /// The Shorebird app_id built into the shorebird.yaml in the app.
+    /// The Shorebird app_id built into the patchwing.yaml in the app.
     /// app_ids are unique to each app and are used to identify the app
     /// within Shorebird's system (similar to a bundle identifier).  They
     /// are not secret and are safe to share publicly.
     /// <https://docs.shorebird.dev/concepts>
     pub app_id: String,
-    /// The Shorebird channel built into the shorebird.yaml in the app.
+    /// The Shorebird channel built into the patchwing.yaml in the app.
     /// This is not currently used, but intended for future use to allow
     /// staged rollouts of patches.
     pub channel: String,
