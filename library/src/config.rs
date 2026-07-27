@@ -132,7 +132,7 @@ pub fn set_config(
             // This previously returned an error, but this happens regularly
             // with apps that use Firebase Messaging, and logging it as an error
             // has caused confusion.
-            bail!("Updater already initialized, ignoring second shorebird_init call.");
+            bail!("Updater already initialized, ignoring duplicate initialization.");
         }
 
         let mut code_cache_path = std::path::PathBuf::from(&app_config.code_cache_dir);

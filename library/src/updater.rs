@@ -82,7 +82,7 @@ impl Display for InitError {
             InitError::InvalidArgument(name, value) => {
                 write!(f, "Invalid Argument: {name} -> {value}")
             }
-            InitError::AlreadyInitialized => write!(f, "Shorebird has already been initialized."),
+            InitError::AlreadyInitialized => write!(f, "Patchwing has already been initialized."),
             InitError::FailedToCleanUpFailedPatch => {
                 write!(f, "Failed to clean up after a failed patch.")
             }
