@@ -595,7 +595,7 @@ fn install_downloaded_patch(
     if let Err(e) = check_hash(&installed_path, &patch.hash).with_context(|| {
         format!(
             "This app reports version {}, but the binary is different from \
-        the version {} that was submitted to Shorebird.",
+        the version {} that was submitted to Patchwing.",
             config.release_version, config.release_version
         )
     }) {

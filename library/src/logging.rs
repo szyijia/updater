@@ -13,7 +13,7 @@ pub fn init_logging() {
 
 #[cfg(any(target_os = "ios", target_os = "macos"))]
 pub fn init_logging() {
-    let init_result = oslog::OsLogger::new("dev.shorebird")
+    let init_result = oslog::OsLogger::new("net.patchwing")
         .level_filter(log::LevelFilter::Info)
         .init();
     match init_result {
